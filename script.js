@@ -10,4 +10,6 @@ tabs.forEach(tab => {
 
         tab.classList.add('active');
         const tabId = tab.getAttribute('href').substring(1); // Obtém o ID da aba
-        document.getElementById(tabId
+        document.getElementById(tabId).classList.add('active'); // Torna a aba ativa visível
+    });
+});
