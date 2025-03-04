@@ -53,60 +53,43 @@ header p {
 nav ul {
     list-style: none;
     display: flex;
+    gap: 20px; /* Espaço entre as abas */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffb74d; /* Cor de destaque dourado no hover */
+    background-color: #ffb74d; /* Cor de fundo ao passar o mouse */
+    color: #121212; /* Cor do texto ao passar o mouse */
 }
 
-/* Section de Cursos Complementares */
-.courses {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+nav ul li a.active {
+    background-color: #ffb74d; /* Cor de fundo quando a aba está ativa */
+    color: #121212; /* Cor do texto quando a aba está ativa */
 }
 
-.course-item {
-    background: #333; /* Fundo escuro para os itens de cursos */
-    border-radius: 10px;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Seções das Abas */
+section {
+    margin: 0 8%; /* Ajuste para 8% de margem nas seções */
 }
 
-.institution-logo {
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
+.tab-content {
+    display: none;
 }
 
-.course-info h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.course-info p {
-    font-size: 14px;
-    color: #bbb; /* Cinza para o texto */
-}
-
-.course-info span {
-    font-size: 12px;
-    color: #999; /* Cinza mais suave */
+.tab-content.active {
+    display: block;
 }
 
 /* Certificações */
@@ -144,11 +127,6 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-}
-
-/* Ajuste de margens para seções */
-section {
-    margin: 0 8%; /* Ajuste para 8% de margem nas seções */
 }
 
 /* Footer */
