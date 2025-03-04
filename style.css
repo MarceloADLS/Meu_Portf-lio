@@ -10,7 +10,7 @@ body {
     background-color: #f0f2f5;
     color: #333;
     line-height: 1.6;
-    padding: 0 15px; /* Margem reduzida nas laterais */
+    padding: 0 8%; /* Reduzi a margem lateral para 8% */
 }
 
 /* Header */
@@ -126,6 +126,15 @@ nav ul li a:hover {
     width: 200px;
 }
 
+/* Remover Hover das Experiências */
+.experience-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
 footer {
     background: #1e3d7c;
     color: white;
@@ -139,13 +148,13 @@ footer p {
 
 /* Ajuste de margens para seções */
 section {
-    margin: 0 10px; /* Diminuí a margem lateral das seções */
+    margin: 0 5%; /* Diminuí ainda mais a margem lateral das seções */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     body {
-        padding: 0 10px; /* Menos espaço nas laterais para dispositivos móveis */
+        padding: 0 5%; /* Menos espaço nas laterais para dispositivos móveis */
     }
 
     header .container {
