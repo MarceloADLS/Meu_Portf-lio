@@ -10,6 +10,7 @@ body {
     background-color: #f0f2f5;
     color: #333;
     line-height: 1.6;
+    padding: 0 15px; /* Margem reduzida nas laterais */
 }
 
 /* Header */
@@ -134,4 +135,33 @@ footer {
 
 footer p {
     font-size: 16px;
+}
+
+/* Ajuste de margens para seções */
+section {
+    margin: 0 10px; /* Diminuí a margem lateral das seções */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; /* Menos espaço nas laterais para dispositivos móveis */
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .course-item {
+        width: 100%; /* Cursos ocupando a tela inteira em dispositivos menores */
+    }
 }
