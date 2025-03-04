@@ -7,15 +7,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: #121212; /* Fundo preto */
+    color: #e0e0e0; /* Texto claro */
     line-height: 1.6;
     padding: 0 8%; /* Reduzi a margem lateral para 8% */
 }
 
 /* Header */
 header {
-    background: linear-gradient(to right, #4e73df, #1e3d7c);
+    background: linear-gradient(to right, #1e3d7c, #4e73df); /* Gradiente de azul escuro */
     color: white;
     padding: 20px 0;
 }
@@ -47,7 +47,7 @@ header h1 {
 
 header p {
     font-size: 16px;
-    color: #ccc;
+    color: #ccc; /* Cinza mais claro para o subtítulo */
 }
 
 nav ul {
@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffb74d;
+    color: #ffb74d; /* Cor de destaque dourado no hover */
 }
 
 /* Section de Cursos Complementares */
@@ -79,7 +79,7 @@ nav ul li a:hover {
 }
 
 .course-item {
-    background: #fff;
+    background: #333; /* Fundo escuro para os itens de cursos */
     border-radius: 10px;
     width: 30%;
     display: flex;
@@ -101,12 +101,12 @@ nav ul li a:hover {
 
 .course-info p {
     font-size: 14px;
-    color: #666;
+    color: #bbb; /* Cinza para o texto */
 }
 
 .course-info span {
     font-size: 12px;
-    color: #999;
+    color: #999; /* Cinza mais suave */
 }
 
 /* Certificações */
@@ -118,7 +118,7 @@ nav ul li a:hover {
 }
 
 .certificate {
-    background-color: #fff;
+    background-color: #333; /* Fundo escuro para certificações */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -128,7 +128,7 @@ nav ul li a:hover {
 
 /* Remover Hover das Experiências */
 .experience-item {
-    background-color: #fff;
+    background-color: #333; /* Fundo escuro para as experiências */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -136,7 +136,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background: #1e3d7c;
+    background: #1e3d7c; /* Fundo escuro no rodapé */
     color: white;
     padding: 20px 0;
     text-align: center;
