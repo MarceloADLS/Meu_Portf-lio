@@ -27,18 +27,20 @@ header .container {
 header .profile {
     display: flex;
     align-items: center;
+    flex-direction: column;  /* Ajuste para separar o nome da descrição */
+    text-align: center;
 }
 
 header .profile img {
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    margin-right: 20px;
+    margin-bottom: 20px; /* Aumentando a margem para separar a imagem do texto */
 }
 
 header h1 {
     font-size: 24px;
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* Aumentando a margem entre o nome e o texto */
 }
 
 header p {
@@ -91,6 +93,39 @@ h2 {
     display: block;
 }
 
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre as experiências */
+}
+
+.experience-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: scale(1.05);
+}
+
+.experience-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.experience-item ul li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
 .certificates {
     display: flex;
     gap: 30px;
@@ -116,6 +151,35 @@ h2 {
     width: 100px;
     height: auto;
     margin-bottom: 10px;
+}
+
+.trail {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.trail .step {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 120px;
+    position: relative;
+}
+
+.trail .step::after {
+    content: '→';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.trail .step:last-child::after {
+    content: '';
 }
 
 ul {
@@ -187,5 +251,18 @@ footer p {
         width: 80%;
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    .experience-item {
+        padding: 15px;
+    }
+
+    .trail {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .trail .step {
+        width: 100%;
     }
 }
