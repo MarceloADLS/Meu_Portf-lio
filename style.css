@@ -10,7 +10,7 @@ body {
     background-color: #121212; /* Fundo preto */
     color: #e0e0e0; /* Texto claro */
     line-height: 1.6;
-    padding: 0 8%; /* Reduzi a margem lateral para 8% */
+    padding: 0 8%; /* Margem normal (8%) */
 }
 
 /* Header */
@@ -112,7 +112,7 @@ nav ul li a:hover {
 /* Certificações */
 .certificates {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -124,6 +124,17 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.certificate:hover {
+    transform: scale(1.05); /* Efeito de hover nas certificações */
+}
+
+.certificate img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 /* Remover Hover das Experiências */
@@ -135,6 +146,12 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Ajuste de margens para seções */
+section {
+    margin: 0 8%; /* Ajuste para 8% de margem nas seções */
+}
+
+/* Footer */
 footer {
     background: #1e3d7c; /* Fundo escuro no rodapé */
     color: white;
@@ -144,11 +161,6 @@ footer {
 
 footer p {
     font-size: 16px;
-}
-
-/* Ajuste de margens para seções */
-section {
-    margin: 0 5%; /* Diminuí ainda mais a margem lateral das seções */
 }
 
 /* Responsividade */
@@ -172,5 +184,9 @@ section {
 
     .course-item {
         width: 100%; /* Cursos ocupando a tela inteira em dispositivos menores */
+    }
+
+    .certificate {
+        width: 150px; /* Certificados menores em dispositivos móveis */
     }
 }
