@@ -6,12 +6,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f7fb;
+    background-color: #f0f2f5;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #282c34;
+    background: linear-gradient(to right, #4e73df, #1e3d7c);
     color: white;
     padding: 20px 0;
 }
@@ -62,24 +63,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e1e1e1;
+    color: #ffb74d;
 }
 
-section {
+main {
     padding: 40px 0;
-    background-color: white;
 }
 
-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-.container {
+main .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .tab-content {
@@ -92,22 +92,28 @@ section h2 {
 
 .certificates {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .certificate {
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
-    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.certificate:hover {
+    transform: scale(1.05);
 }
 
 .certificate img {
-    width: 100%;
+    width: 100px;
     height: auto;
-    max-width: 100px;
     margin-bottom: 10px;
 }
 
@@ -116,21 +122,22 @@ ul {
 }
 
 ul li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
+    transition: color 0.3s;
 }
 
 ul li a:hover {
-    color: #0073e6;
+    color: #ffb74d;
 }
 
 footer {
-    background-color: #282c34;
+    background: #1e3d7c;
     color: white;
     padding: 20px 0;
     text-align: center;
